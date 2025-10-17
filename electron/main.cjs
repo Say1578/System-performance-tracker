@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Menu } = require('electron');
 const path = require('path');
 const fs = require('fs');
 
@@ -12,6 +12,8 @@ function createWindow() {
       contextIsolation: false,
     },
   });
+
+  Menu.setApplicationMenu(null);
 
   const distPath = path.join(__dirname, '../dist/index.html');
 
