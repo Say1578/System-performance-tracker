@@ -8,9 +8,18 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["src/*"],
+      "@main/*": ["src/main/*"],
+      "@renderer/*": ["src/renderer/*"],
+      "@components/*": ["src/renderer/components/*"],
+      "@ui/*": ["src/renderer/components/ui/*"],
+      "@hooks/*": ["src/renderer/hooks/*"],
+      "@pages/*": ["src/renderer/pages/*"],
+      "@styles/*": ["src/renderer/styles/*"],
+      "@utils/*": ["src/utils/*"],
+      "@prisma/*": ["prisma/*"]
     }
   },
   "include": ["src"]
